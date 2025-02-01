@@ -1,4 +1,4 @@
-  #include <stdio.h>
+ #include <stdio.h>
 
 int main() {
 
@@ -71,7 +71,7 @@ int main() {
     printf("Pontos turísticos: %d\n", pontosturisticos2);
     
     densidadepopulacional2 = (double) populacao2 / area2;
-    pibpercapta = (double) pib2 / populacao2;
+    pibpercapta2 =  pib2 / populacao2;
 
     printf("Densidade populacional: %.2f\n", densidadepopulacional2);
     printf("PIB per capta: %.2f\n", pibpercapta2);
@@ -80,8 +80,6 @@ int main() {
 
     printf("Super poder: %.2f\n", superpoder2);
 
-    
-    
 
   return 0;
 }
