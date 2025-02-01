@@ -15,7 +15,7 @@ int main() {
     printf("Começaremos com o país: Brasil\n");
     printf("Para começarmos digite um estado brasileiro?\n");
     scanf("%s", &estado); 
-    printf("Escolha uma cidade do estado %s\n", estado);
+    printf("Escolha uma cidade do estado:\n");
     scanf("%s", cidade);
     printf("Escolha o código da carta de A até H e do número 01 até 04. Exemplo: A01. Qual seu código?\n");
     scanf("%s", &codigo);
@@ -26,7 +26,7 @@ int main() {
     printf("Digite o PIB da sua cidade:\n");
     scanf("%f",&pib);
     printf("Digite quantos pontos turisticos existem em sua cidade:\n");
-    scanf("%d", pontosturisticos);
+    scanf("%d", &pontosturisticos);
     printf("País: Brasil \n");
     printf("Código da cidade: %s\n", codigo);
     printf("Estado: %s\n", estado);
