@@ -1,4 +1,4 @@
- #include <stdio.h>
+  #include <stdio.h>
 
 int main() {
 
@@ -7,10 +7,12 @@ int main() {
     char cidade [30];
     int populacao;
     float area;
-    float pib;
+    long long int pib;
     int pontosturisticos;
-    float densidadepopulacional;
-    float pibpercapta;
+    double densidadepopulacional;
+    double pibpercapta;
+    double superpoder;
+
 
     printf("Bem vindo ao jogo SUPER TRUNFO países!\n");
     printf("Nosso diferencial é que o usuário que define os dados\n");
@@ -25,7 +27,7 @@ int main() {
     printf("Digite a área da cidade:\n");
     scanf("%f", &area);
     printf("Digite o PIB da sua cidade:\n");
-    scanf("%f",&pib);
+    scanf("%lld",&pib);
     printf("Digite quantos pontos turisticos existem em sua cidade:\n");
     scanf("%d", &pontosturisticos);
     printf("País: Brasil \n");
@@ -33,15 +35,20 @@ int main() {
     printf("Cidade: %s\n", cidade);
     printf("População: %d\n", populacao);
     printf("Área: %.2f\n", area);
-    printf("PIB: %.2f\n", pib);
+    printf("PIB: %lld\n", pib);
     printf("Pontos turísticos: %d\n", pontosturisticos);
     
-    densidadepopulacional = populacao / area;
-    pibpercapta = pib / populacao;
+    densidadepopulacional = (double) populacao / area;
+    pibpercapta = (double) pib / populacao;
 
     printf("Densidade populacional: %.2f\n", densidadepopulacional);
     printf("PIB per capta: %.2f\n", pibpercapta);
     
+    superpoder = (double) populacao + area + pib + pontosturisticos + densidadepopulacional + pibpercapta;
+
+    printf("Super poder: %.2f", superpoder);
+
+
 
   return 0;
 }
