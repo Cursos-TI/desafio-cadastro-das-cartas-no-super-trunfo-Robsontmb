@@ -1,8 +1,8 @@
-   #include <stdio.h>
+ #include <stdio.h>
 
 int main() {
 
-    char estado [30];
+
     char codigo [3];
     char cidade [30];
     int populacao;
@@ -14,9 +14,8 @@ int main() {
     printf("Nosso diferencial é que o usuário que define os dados\n");
     printf("Começaremos com o país: Brasil\n");
     printf("Para começarmos digite um estado brasileiro?\n");
-    scanf("%s", &estado); 
-    printf("Escolha uma cidade do estado:\n");
-    scanf("%s", cidade);
+    printf("Escolha uma cidade:\n");
+    scanf("%s", &cidade);
     printf("Escolha o código da carta de A até H e do número 01 até 04. Exemplo: A01. Qual seu código?\n");
     scanf("%s", &codigo);
     printf("Digite o número da populaçao da cidade:\n");
@@ -29,17 +28,15 @@ int main() {
     scanf("%d", &pontosturisticos);
     printf("País: Brasil \n");
     printf("Código da cidade: %s\n", codigo);
-    printf("Estado: %s\n", estado);
     printf("Cidade: %s\n", cidade);
     printf("População: %d\n", populacao);
-    printf("Área: %f\n", area);
-    printf("PIB: %f\n", pib);
+    printf("Área: %.2f\n", area);
+    printf("PIB: %.2f\n", pib);
     printf("Pontos turísticos: %d\n", pontosturisticos);
 
 
   return 0;
 }
-
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
