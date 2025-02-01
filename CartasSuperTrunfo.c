@@ -9,6 +9,8 @@ int main() {
     float area;
     float pib;
     int pontosturisticos;
+    float densidadepopulacional;
+    float pibpercapta;
 
     printf("Bem vindo ao jogo SUPER TRUNFO países!\n");
     printf("Nosso diferencial é que o usuário que define os dados\n");
@@ -33,7 +35,13 @@ int main() {
     printf("Área: %.2f\n", area);
     printf("PIB: %.2f\n", pib);
     printf("Pontos turísticos: %d\n", pontosturisticos);
+    
+    densidadepopulacional = populacao / area;
+    pibpercapta = pib / populacao;
 
+    printf("Densidade populacional: %.2f\n", densidadepopulacional);
+    printf("PIB per capta: %.2f\n", pibpercapta);
+    
 
   return 0;
 }
