@@ -56,7 +56,7 @@ int main() {
     scanf("%s", &codigo2);
     printf("Digite o número da populaçao da cidade:\n");
     scanf("%d", &populacao2);
-    printf("Digite a área da cidade:\n");
+    printf("Digite a área da sua cidade:\n");
     scanf("%f", &area2);
     printf("Digite o PIB da sua cidade:\n");
     scanf("%lld",&pib2);
