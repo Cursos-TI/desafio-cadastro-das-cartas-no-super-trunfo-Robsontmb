@@ -33,7 +33,23 @@ int main () {
         printf("pib: %d\n", pib2);
         printf("densidade demográfica: %.2f\n", densidadedemografica2);
         scanf("%d", &pais);
+
+
+        switch (pais)
+        {
+        case 1:
+        printf("Você escolheu Brasil.\n");
+            
+            break;
+
+        case 2:
+        printf("Você escolheu Argentina.\n");
+
+        break;
         
+        default:
+          printf ("Comando invalido;\n");
+        }
 
 
 
