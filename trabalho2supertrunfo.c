@@ -32,7 +32,8 @@ int main () {
         printf("area: %f\n", area2);
         printf("pib: %d\n", pib2);
         printf("densidade demográfica: %.2f\n", densidadedemografica2);
-
+        scanf("%d", &pais);
+        
 
 
 
