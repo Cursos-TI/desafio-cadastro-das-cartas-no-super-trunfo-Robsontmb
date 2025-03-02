@@ -35,39 +35,39 @@ int main () {
         printf("densidade demográfica: %.2f\n", densidadedemografica2);
         scanf("%d", &pais);
 
-
+        
         switch (pais)
         {
         case 1:
         printf("Você escolheu Brasil.\n");
-        printf("Escolha uma habilidade:\n ");
+        printf("Escolha uma habilidade:\n");
         printf("1. População.\n");
         printf("2. Area.\n");
         printf("3. Pib.\n");
         printf("4. Densidade.\n");
-
+        scanf("%d", &habilidade);
         switch(habilidade){
             case 1:
-            printf("Você escolheu População.\n");
+            printf("Você escolheu População do Brasil.\n");
             printf("População Brasil: %d contra população Argentina:%d.\n", populacao , populacao2);
-            populacao>populacao2 ? printf("Você ganhou") : printf("Você perdeu");
+            populacao>populacao2 ? printf("Você ganhou\n") : printf("Você perdeu\n");
             break;
             
             case 2:
-            printf("Você escolheu Area.\n");
+            printf("Você escolheu Area do Brasil.\n");
             printf("Area Brasil: %.2f contra Area Argentina:%.2f.\n", area , area2);
-            area>area2 ? printf("Você ganhou") : printf("Você perdeu");
+            area>area2 ? printf("Você ganhou\n") : printf("Você perdeu\n");
             break;
 
             case 3:
-            printf("Você escolheu Pib.\n");
+            printf("Você escolheu Pib do Brasil.\n");
             printf("Pib Brasil: %d contra Pib Argentina:%d.\n", pib , pib2);
-            pib>pib2 ? printf("Você ganhou") : printf("Você perdeu");
-
+            pib>pib2 ? printf("Você ganhou\n") : printf("Você perdeu\n");
+            break;
             case 4:
-            printf("Você escolheu densidade.\n");
+            printf("Você escolheu densidade do Brasil.\n");
             printf("densidade Brasil: %.2f contra densidade Argentina:%.2f.\n", densidadedemografica , densidadedemografica2);
-            densidadedemografica<densidadedemografica2 ? printf("Você ganhou") : printf("Você perdeu");
+            densidadedemografica<densidadedemografica2 ? printf("Você ganhou\n") : printf("Você perdeu\n");
             break;
 
             default:
@@ -75,38 +75,38 @@ int main () {
         
         }
             
-            break;
+        break;
 
         case 2:
         printf("Você escolheu Argentina.\n");
-        printf("Escolha uma habilidade:\n ");
+        printf("Escolha uma habilidade:\n");
         printf("1. População.\n");
         printf("2. Area.\n");
         printf("3. Pib.\n");
         printf("4. Densidade.\n");
-
+        scanf("%d", &habilidade);
         switch(habilidade){
         case 1:
-            printf("Você escolheu População.\n");
+            printf("Você escolheu População da Argentina.\n");
             printf("População Brasil: %d contra população Argentina:%d.\n", populacao , populacao2);
-            populacao<populacao2 ? printf("Você ganhou") : printf("Você perdeu");
+            populacao<populacao2 ? printf("Você ganhou\n") : printf("Você perdeu\n");
             break;
             
             case 2:
-            printf("Você escolheu Area.\n");
+            printf("Você escolheu Area da Argentina.\n");
             printf("Area Brasil: %.2f contra Area Argentina:%.2f.\n", area , area2);
-            area<area2 ? printf("Você ganhou") : printf("Você perdeu");
+            area<area2 ? printf("Você ganhou\n") : printf("Você perdeu\n");
             break;
 
             case 3:
-            printf("Você escolheu Pib.\n");
+            printf("Você escolheu Pib da Argentina.\n");
             printf("Pib Brasil: %d contra Pib Argentina:%d.\n", pib , pib2);
-            pib<pib2 ? printf("Você ganhou") : printf("Você perdeu");
-
+            pib<pib2 ? printf("Você ganhou\n") : printf("Você perdeu\n");
+            break;
             case 4:
-            printf("Você escolheu densidade.\n");
+            printf("Você escolheu densidade da Argentina.\n");
             printf("densidade Brasil: %.2f contra densidade Argentina:%.2f.\n", densidadedemografica , densidadedemografica2);
-            densidadedemografica>densidadedemografica2 ? printf("Você ganhou") : printf("Você perdeu");
+            densidadedemografica>densidadedemografica2 ? printf("Você ganhou\n") : printf("Você perdeu\n");
             break;
 
             default:
@@ -115,21 +115,9 @@ int main () {
 
 
         break;
+        } }
         
-        default:
-          printf ("Comando invalido;\n");
-        }
-
-
-
-
-
-
-
-
-
         break;
-
         case 2:
         printf("O jogo é bem simples, o jogador deve escolher uma carta referente a um país.\n");
         printf("Depois da escolha o computador usará a outra carta.\n");
@@ -147,7 +135,7 @@ int main () {
         break;
 
         case 4:
-        ("Jogo encerrado!\n");
+        printf("Jogo encerrado!\n");
         
 
         break;
