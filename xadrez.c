@@ -1,17 +1,23 @@
 #include <stdio.h>
 
+void movtorre(int casas){
+
+if(casas>0){
+    printf("Torre moveu a direita.\n");
+    movtorre(casas - 1);
+}
+}
+
+
 int main () {
+
 
 int torre = 0, bispo = 0, rainha, cavalo, movimento= 1;
 
-printf("O jogo de xadrez começou!/n");
+printf("O jogo de xadrez começou!\n");
 printf("A primeira peça a se mover será a torre!\n");
 
-while(torre<5){
-
-    printf("Torre moveu a direita.\n");
-    torre++;
-}
+movtorre(5);
 
 do{
  printf("bispo cima\n");
