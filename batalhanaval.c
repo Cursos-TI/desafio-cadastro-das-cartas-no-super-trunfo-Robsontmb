@@ -3,7 +3,7 @@
 int main(){
 
 char coluna[10] = {'A','B','C','D','E','F','G','H','I','J'};
-int linha[10] = {1,2,3,4,5,6,7,8,9,10};
+int linha[10] = {0,1,2,3,4,5,6,7,8,9};
 int i;
 int h;
 int j;
@@ -27,14 +27,15 @@ printf(" Bem vindo ao jogo Batalha naval!\n");
 printf("          ***TABULEIRO***\n");
 
 for(h=0;h<10;h++) {
-    printf("  %c", coluna[h]);
+    printf("   %c", coluna[h]);
     
 };
     printf("\n");
     for(i=0;i<10;i++){
+        printf("%d", linha[i]);
     for(j=0;j<10;j++){
         
-        printf("  %d", mar[i][j]);
+        printf("   %d", mar[i][j]);
 
         
     }
