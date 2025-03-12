@@ -33,6 +33,30 @@ for(j=2; j<5;j++){
 
 }
 
+for(i= 1; i<4; i++){
+    for(j=1; j<4; j++){
+        mar[i++][j]=3;
+
+    }
+
+}
+
+
+for(i= 0; i<3; i++){
+    for(j=9; j>6; j--){
+        mar[i++][j]=3;
+
+    }
+
+}
+
+
+
+
+
+
+
+
 printf(" Bem vindo ao jogo Batalha naval!\n");
 printf("          ***TABULEIRO***\n");
 
